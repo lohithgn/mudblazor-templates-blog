@@ -13,3 +13,6 @@ MudBlazor is a Blazor  UI library which provides Google's Material Design based 
 # Screenshot(s)
 
 ![Blog Template](https://getmdl.io/assets/templates/blog.jpg)
+
+# Live Site
+This blog template can be seen live at [https://blogmudblazor.surge.sh/](https://blogmudblazor.surge.sh/)

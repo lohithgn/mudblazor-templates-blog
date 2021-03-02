@@ -1,0 +1,33 @@
+name: "Deploy Site"
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+defaults:
+  run:
+    shell: pwsh
+    working-directory: MudBlazor.Templates.Blog
+
+jobs:
+  builddeploy:
+    name: "Build & Deploy Site"
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Install Surge CLI
+        run: npm install -g surge
+
+      - name: dotnet restore
+        run: dotnet restore
+
+      - name: dotnet build
+        run: dotnet build -c Release --no-restore
+
+      - name: dotnet publish
+        run: dotnet build -c Release --no-restore --no-build
+
+      - name: surge deploy
+        run: surge ./artifacts/wwwroot ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}

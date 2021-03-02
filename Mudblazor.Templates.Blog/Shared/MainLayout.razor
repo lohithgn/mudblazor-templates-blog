@@ -1,0 +1,19 @@
+﻿@inherits LayoutComponentBase
+<MudThemeProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<MudLayout>
+    <MudMainContent>
+        @Body
+    </MudMainContent>
+    <MudPaper Square="true" Elevation="0" Style="min-height:8rem">
+        <MudContainer Class="py-12">
+            <div class="d-flex">
+                <div class="mr-10"><MudIconButton Icon="@Icons.Custom.Brands.Twitter"></MudIconButton></div>
+                <div class="mr-10"><MudIconButton Icon="@Icons.Custom.Brands.Facebook"></MudIconButton></div>
+                <div><MudIconButton Icon="@Icons.Custom.Brands.Google"></MudIconButton></div>
+            </div>
+        </MudContainer>
+    </MudPaper>
+</MudLayout>

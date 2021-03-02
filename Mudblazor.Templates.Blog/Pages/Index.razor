@@ -1,0 +1,139 @@
+﻿@page "/"
+@inject NavigationManager NavigationManager
+
+<MudContainer MaxWidth="MaxWidth.Medium">
+    <MudGrid Class="mb-16" Style="margin-top:8rem">
+        <MudItem xs="12" sm="4">
+            <MudCard>
+                <MudCardContent Style="min-height:18rem">
+                    <MudGrid>
+                        <MudItem xs="12">
+                            <div class="d-flex justify-end">
+                                <MudFab Class="orange default" Icon="@Icons.Material.Outlined.Add" />
+                            </div>
+                        </MudItem>
+                        <MudItem xs="12">
+                            <div class="mt-8 d-flex justify-center align-center">
+                                <div>
+                                    <MudCardMedia style="height:5rem;width:5rem" Image="/images/logo.png" />
+                                    <MudText Align="Align.Center">+1,337</MudText>
+                                </div>
+                            </div>
+                        </MudItem>
+                    </MudGrid>
+                </MudCardContent>
+                <MudCardActions Class="d-flex justify-space-between grey lighten-4">
+                    <MudText Typo="Typo.body2">The Newist</MudText>
+                    <MudMenu Icon="@Icons.Material.Filled.MoreVert">
+                        <MudMenuItem>About</MudMenuItem>
+                        <MudMenuItem>Message</MudMenuItem>
+                        <MudMenuItem>Favorite</MudMenuItem>
+                        <MudMenuItem>Search</MudMenuItem>
+                    </MudMenu>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+        <MudItem xs="12" sm="8">
+            <MudCard>
+                <MudLink Href="entry" Underline="Underline.None">
+                    <MudCardMedia Image="/images/coffee.jpg" />
+                    <MudText Class="ml-5 mt-n16 white-text" Typo="Typo.h3">Coffee Pic</MudText>
+                </MudLink>
+                <MudCardActions Class="grey lighten-4">
+                    <MudAvatar>
+                        <MudIcon Icon="@Icons.Material.Filled.Person" Color="Color.Inherit"></MudIcon>
+                    </MudAvatar>
+                    <MudText Typo="Typo.body2" Class="pl-4">
+                        <div>The Newist</div>
+                        <div>2 days ago</div>
+                    </MudText>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+        
+        <MudItem sm="12">
+            <MudCard>
+                <MudLink Href="entry" Underline="Underline.None">
+                    <MudCardMedia Image="/images/road.jpg" />
+                    <MudText Class="ml-5 mt-n16 white-text" Typo="Typo.h3">On the road again</MudText>
+                </MudLink>
+                <MudCardContent>
+                    <MudText Typo="Typo.body2" Class="mt-3">Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.</MudText>
+                </MudCardContent>
+                <MudCardActions Class="grey lighten-4">
+                    <MudAvatar>
+                        <MudIcon Icon="@Icons.Material.Filled.Person" Color="Color.Inherit"></MudIcon>
+                    </MudAvatar>
+                    <MudText Typo="Typo.body2" Class="pl-4">
+                        <div>The Newist</div>
+                        <div>2 days ago</div>
+                    </MudText>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+        <MudItem sm="12">
+            <MudCard>
+                <MudLink Href="entry" Underline="Underline.None">
+                    <div class="blue-grey darken-4 white-text py-10 px-5" style="min-height:15rem">
+                        <MudText Typo="Typo.h3">“</MudText>
+                        <MudText Typo="Typo.h3">
+                            I couldn’t take any pictures but this was an amazing thing…
+                        </MudText>
+                        <MudText Typo="Typo.h3">”</MudText>
+                    </div>
+                </MudLink>
+                <MudCardContent>
+                    <MudText Typo="Typo.body2" Class="mt-3">
+                        Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+                    </MudText>
+                </MudCardContent>
+                <MudCardActions Class="grey lighten-4">
+                    <MudAvatar>
+                        <MudIcon Icon="@Icons.Material.Filled.Person" Color="Color.Inherit"></MudIcon>
+                    </MudAvatar>
+                    <MudText Typo="Typo.body2" Class="pl-4">
+                        <div>The Newist</div>
+                        <div>2 days ago</div>
+                    </MudText>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+        <MudItem sm="12">
+            <MudCard>
+                <MudLink Href="entry" Underline="Underline.None">
+                    <MudCardMedia Title="Shopping" Image="/images/shopping.jpg" />
+                    <MudText Class="ml-5 mt-n16 white-text" Typo="Typo.h3">Shopping</MudText>
+                </MudLink>
+                <MudCardContent>
+                    <MudText Typo="Typo.body2" Class="py-5">
+                        Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+                    </MudText>
+                </MudCardContent>
+                <MudCardActions Class="grey lighten-4">
+                    <MudAvatar>
+                        <MudIcon Icon="@Icons.Material.Filled.Person" Color="Color.Inherit"></MudIcon>
+                    </MudAvatar>
+                    <MudText Typo="Typo.body2" Class="pl-4">
+                        <div>The Newist</div>
+                        <div>2 days ago</div>
+                    </MudText>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+        <MudItem sm="12" Class="d-flex white-text justify-end" Style="width:100%">
+                <div class="d-flex align-center">
+                    <MudButton Variant="Variant.Text" Color="Color.Inherit" Class="pr-5" @onclick="OnMoreClick">More</MudButton>
+                    <MudAvatar Class="shades white" Size="Size.Small">
+                        <MudIconButton @onclick="OnMoreClick" Icon="@Icons.Material.Filled.ArrowForward"></MudIconButton>
+                    </MudAvatar>
+                </div>
+        </MudItem>
+    </MudGrid>
+</MudContainer>
+
+@code {
+    void OnMoreClick(MouseEventArgs args)
+    {
+        NavigationManager.NavigateTo("/entry");
+    }
+} 

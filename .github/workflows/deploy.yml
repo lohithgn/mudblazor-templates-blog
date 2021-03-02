@@ -8,7 +8,6 @@ on:
 
 defaults:
   run:
-    shell: pwsh
     working-directory: MudBlazor.Templates.Blog
 
 jobs:
@@ -21,9 +20,6 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      
-      - name: Install Surge CLI
-        run: npm install -g surge
 
       - name: dotnet restore
         run: dotnet restore
@@ -33,6 +29,9 @@ jobs:
 
       - name: dotnet publish
         run: dotnet build -c Release --no-restore --no-build
+
+      - name: Install Surge CLI
+        run: npm install -g surge
 
       - name: surge deploy
         run: surge ./artifacts/wwwroot ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}

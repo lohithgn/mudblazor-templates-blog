@@ -1,7 +1,9 @@
 ![MudBlazor](https://raw.githubusercontent.com/Garderoben/MudBlazor.Templates/master/content/MudBlazor-GitHub.png)
-# Blog Blazor Template built with MudBlazor
+# Blog Template built with Blazor & MudBlazor
 
-In this repo you will find a Blog template built with Blaor Wasm and MudBlazor. MudBlazor is a Blazor  UI library providing Google's Material Design based components. You can check out MudBlazor [here](https://www.mudblazor.com/)
+In this repo you will find a Blog template built with Blazor WASM and MudBlazor. 
+
+MudBlazor is a Blazor  UI library which provides Google's Material Design based components. You can check out MudBlazor [here](https://www.mudblazor.com/)
 
 # Prerequisites
 
